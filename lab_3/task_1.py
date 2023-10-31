@@ -1,6 +1,7 @@
 def search(items, required_item):
-    if required_item in items:
-        return items.index(required_item)
+    for index, item in enumerate(items):
+        if item == required_item:
+            return index
 
 
 items_list = ['яблоко', 'банан', 'апельсин', 'груша', 'киви', 'банан']
